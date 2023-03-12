@@ -283,12 +283,12 @@ public class SystemNavigationBarModule extends ReactContextBaseJavaModule {
       runOnUiThread(
         () -> {
           view.setNavigationBarDividerColor(color);
-          view
-            .getDecorView()
-            .setSystemUiVisibility(
-              WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS |
-              WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION
-            );
+          // view
+          //   .getDecorView()
+          //   .setSystemUiVisibility(
+          //     WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS |
+          //     WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION
+          //   );
         }
       );
       promise.resolve("true");
